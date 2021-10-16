@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+
+<body>
+    <h3>Split Example</h3>
+    <p id="split"></p>
+    <h3>Join Example</h3>
+    <p id="join"></p>
+    <h3>Reverse Example</h3>
+    <p id="reverse"></p>
+    <script>
+        let string = "Water Air Fire";
+        //polyfill for split
+        const arr = string.split(" ");
+        document.getElementById("split").innerHTML = arr;
+        //polyfill for  join
+        document.getElementById("join").innerHTML = (arr.join(""));
+        //polyfill for reverse
+        document.getElementById("reverse").innerHTML = (arr.reverse());
+    </script>
+</body>
+
+</html>
